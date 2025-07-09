@@ -1,0 +1,54 @@
+
+/*Variables for some colors, borders, font weight/sizes*/
+$color-black: #000000;
+$color-blue: #0d6efd;
+$color-white: #fff;
+$color-dark-gray: #333;
+$border-drk-gray: #303030;
+$color-light-gray: rgba(255, 255, 255, .4);
+
+$font-weight-bold: bold; 
+$font-weight-light: 300;
+$h2-md-size: 1.6em;
+$border-thin: 1px;
+
+
+/* Nav styles that have been put into their own partial file and imported to main scss*/
+
+// nested nav styles
+.nav {
+  position: absolute;
+  right: 0em;
+  top: 2.2em;
+
+  ul {
+    list-style-type: none;
+  
+    li {
+      float: left;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      a, span {
+        display: block;
+        margin-left: 0.7em;
+        padding: 0.80em 1.2em;
+        letter-spacing: 0.06em;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.1em;
+        outline: 0;
+        color: $color-dark-gray;
+      }
+
+      &.active a {
+        background: $color-blue;
+        border-radius: 5px;
+        color: $color-white;
+      }
+
+    }
+  }
+}
